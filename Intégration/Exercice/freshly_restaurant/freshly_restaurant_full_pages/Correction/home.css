@@ -1,0 +1,260 @@
+/* *************************
+Reset CSS
+************************* */
+:root {
+    --clrs_primary : #4c4343;
+    --clrs_secondary : #ebe3db;
+    --clrs_tertiary : #950000;
+}
+
+
+
+header h1 a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+/* ****************************** 
+           SLICK SLIDE 
+************************************/
+
+div.slick_slide, 
+    section {
+        margin-inline: 1rem;
+    }
+
+    .slick-next {
+        margin-right: 2rem;
+    }
+
+
+        .slick-prev {
+           
+            margin-left: 2rem;
+    
+        }
+
+/* ****************************** 
+           CONTAINER 
+************************************/
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto ;
+}
+.container a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+article p {
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+article p + hr {
+    border-top: 1px dashed;
+    margin-top: 0;
+    padding: 0;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 3rem; 
+    margin-bottom: 2rem ;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    /* display: block;
+    object-fit: cover; */
+}
+
+
+article{
+    background-color: var(--clrs_secondary);
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+article div.see_more {
+    background-color: var(--clrs_primary);
+    margin: 1rem;
+    text-align: center;
+    padding: 0.4rem;
+    transition: background-color 1s ;
+
+}
+
+article div.see_more a{
+    color:#fff;
+    display: block;
+}
+
+article div.see_more:hover{
+    background-color: var(--clrs_tertiary);
+}
+
+article div.see_more svg{
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+article h3 {
+    text-align: center;
+}
+
+
+
+ div figure {
+    position: relative;
+    margin: 0;
+    font-size: 15px;
+}
+
+div figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.493);
+    text-align:center;
+    padding: 2rem;
+    color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;  
+    visibility: hidden;
+}
+
+div figcaption p{
+    border: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+div figure:hover figcaption {
+    visibility: visible;
+}
+
+.prix {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+
+
+/* *******************
+ Tablette
+******************** */
+@media screen and (min-width: 780px) {
+    .logo {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        background-color: var(--clr-bg);
+    }
+
+    .navbar ul li {
+        border: 1px solid var(--clr-bg);
+        
+    }
+    .navbar ul li:last-child {
+        border-bottom: none;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+
+    
+}
+/* *******************
+         Desktop
+******************** */
+@media screen and (min-width: 980px) {
+   
+    .logo {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 0.5rem 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
+   
+    .navbar ul  {
+       background-color: rgba(102, 51, 153, 0);
+        margin:0 .5rem;
+    }
+    
+   .image_welcome {
+    max-width: 500px;
+    
+
+
+    }
+
+    .flex-welcome  {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .flex-welcome p:nth-child(1){
+        margin-top: 0;
+    }
+
+section .flex_article {
+        display: flex;
+        gap:1rem;
+    }
+
+
+    .aside {
+        display: flex;
+    }
+}
+
+
+
+

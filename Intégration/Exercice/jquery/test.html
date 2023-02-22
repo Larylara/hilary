@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>jQuery</title>
+</head>
+<body>
+    <header>
+        <h1>jQuery</h1>
+        <p>Utilisation de jQuery</p>
+    </header>
+    <main class="container">
+        <nav class="navbar">
+            <button type="submit" class="b1">Css</button>
+            <button type="submit" class="b2">Html</button>
+            <button type="submit" class="b3">Toggle</button>
+            <button type="submit" class="b4">Slide</button>
+            <button type="submit" class="b5">More</button>
+        </nav>
+        <article class="only">
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque provident, ipsam unde, quam reiciendis voluptates eligendi repellat possimus ad adipisci accusamus magni velit. Adipisci reiciendis harum, magnam repudiandae iste, deserunt, molestiae veritatis ut excepturi quos consectetur quia ipsum?</p>
+            <p>Voluptate maiores cumque architecto sint officiis quod magnam. Excepturi harum repellat temporibus omnis eius provident est eveniet ducimus dicta? Laborum ratione minima temporibus debitis, voluptatem, dolore laboriosam aut autem aspernatur, magnam voluptates odit quia.</p>
+        </div>
+        </article>
+    </main>
+    <footer>
+        <img src="../instructions/img/logo-3wa copy.png" alt="3wa">
+        <p>Ce matériel pédagogique est la propriété de la <span>3W Academy</span>.Cet exercice a été réalisé par <span>Catherine Denos</span>.</p>
+    </footer>
+    <script src="../jquery/fichiers/jQuery3.6.min.js" ></script>
+    <script>
+
+        $(".b1").click(function () {
+             $(".only").css("color","blue");
+        });
+        $(".b2").click(function () {
+             $(".only").html("Hello world!");
+        });
+        $(".b3").click(function () {
+             $(".only").toggle(2000);
+        });
+        $(".b4").click(function () {
+             $(".only").slideDown();
+        });
+        $(".b5").click(function () {
+            alert("fucking codeur en action");
+        });
+    </script>
+</body>
+</html>

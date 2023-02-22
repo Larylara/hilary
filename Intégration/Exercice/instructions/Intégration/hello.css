@@ -1,0 +1,108 @@
+.container{
+    margin: 0 auto;
+    width: 900px;  
+}
+
+ul{
+    list-style: none;   
+    display: flex;
+    justify-content: center;
+}
+.lien{
+    color: white;
+    margin-right: 100px;
+    text-decoration: none;
+}
+h1{
+    color: #40CCEA;
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+    background-color: #40CCEA;
+    padding: 10px;
+}
+
+footer{
+    background-color: #40CCEA;
+    color: white;
+    text-align: center;
+}
+
+body{
+    text-align: left;
+}
+
+.vienne{
+    float: left;
+    margin-right: 10px;
+    width: 40%;
+}
+
+.readmore{
+    background-color: #0096D0;
+    border-radius: 6px;
+    padding: 10px;
+    color: white;
+}
+
+h2{
+    text-transform:uppercase;
+}
+
+section{
+    margin: 10px;
+    text-align: left;
+}
+
+.marrakech{
+    float: right;
+    margin-right: 10px;
+    width: 40%;
+}
+
+.bg{
+    background-image: url("../img/fond.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 90px;
+    margin-top: 50px;
+    
+}
+
+.ba{
+    background-color: white;
+    width: 300px;
+    height: 280px;
+    margin-left: 420px;
+}
+
+aside{
+    width: 100%;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    text-align: left;
+}
+
+.m{
+    margin-left: 500px;
+    margin: 0 auto;
+    width: 900px;  
+}
+
+.icons{
+    width: 15px;
+    height: 15px;
+}
+
+.none{
+    text-decoration: none;
+    color: #40CCEA;
+}

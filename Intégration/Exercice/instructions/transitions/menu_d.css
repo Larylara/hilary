@@ -1,0 +1,116 @@
+:root {
+    /* color */
+    --clr-primary: orangered;
+    --clr-secondary: white;
+    --clr-tertiary: rgb(225, 221, 221);
+    --clr-rb: black;
+    --clr-bg: rgb(60, 55, 55);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--clr-tertiary);
+    padding-bottom: 5px;
+    display: block;
+    justify-content: center;
+    align-content: center;
+}
+
+header,
+footer {
+    background-color: var(--clr-bg);
+    color: var(--clr-secondary);
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+h1,
+span {
+    color: var(--clr-primary);
+}
+
+article {
+    background-color: var(--clr-secondary);
+    margin: 50px;
+    width: 40%;
+}
+
+nav {
+    background-color: var(--clr-rb);
+    padding: 10px;
+}
+
+article {
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+a {
+    color: var(--clr-secondary);
+    text-decoration: none;
+    padding: 1.7rem;
+}
+
+h2 {
+    display: flex;
+    justify-self: left;
+}
+
+li {
+    position: relative;
+    padding: 0;
+}
+
+article p{
+    text-align: left;
+    margin-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+nav ul li {
+    position: relative;
+    padding: 0 8px;
+}
+
+.second {
+    display: none;
+    position: absolute;
+    top: 2.7rem;
+    background-color: var(--clr-rb);
+}
+
+.second li {
+    padding: 0;
+}
+
+nav ul li:hover .second {
+    display: block;
+}
+
+nav ul li ul {
+    border: 1px solid black;
+}
+
+.padding {
+    display: block;
+    color: var(--clr-secondary);
+    padding: 1rem 2rem;
+}
+
+.padding:hover {
+    background-color: var(--clr-primary);
+}

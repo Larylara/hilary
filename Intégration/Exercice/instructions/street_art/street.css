@@ -1,0 +1,156 @@
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    padding: 15px;
+}
+
+li a:hover{
+    background-color: #ededed;
+    color: black;
+    box-shadow: -2px 2px #037d9d;
+}
+nav a{
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    margin-right: 20px;
+}
+
+body{
+    margin: 0;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(82, 79, 79);
+    color: #f9f9f9;
+    padding: 20px;
+}
+
+.container{
+    margin: 0 auto;
+    text-align: center;
+    margin: 20px;
+}
+
+.one{
+    background-image: url("../street_art/images/banner1.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500%;
+    height: 20rem;
+}
+
+.one p{
+    background-color: rgb(237, 237, 237, 0.6);
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    color: #db0059;
+}
+
+.two{
+    background-color: #ededed;
+    color: black;
+    box-shadow: -2px 2px #037d9d;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.container img{
+    max-width: 100%;
+    height: auto;
+}
+
+.cadre{
+    background-color:  #ededed;
+    padding: 10px;
+    margin: 20px;
+}
+
+aside{
+    background-color:  #db0059;
+    color: white;
+    padding-left: 30px;
+    text-align: lefts;
+    margin-top: 20px;
+}
+
+.icons{
+    width: 30px;
+    color: #037d9d;
+}
+
+aside legend{
+    text-align: center;
+}
+
+.la{
+    border-left: 2px solid #f9f9f9;
+    border-bottom: 2px solid #f9f9f9;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    text-align: left;
+    margin-right: 30px;
+}
+.mcp{
+    width: 30px;
+    color: #db0059;
+}   
+
+.last{
+    color: #db0059;
+    background-color: #ededed;
+    padding: 5px;
+}
+
+input{
+    margin: 10px 0;
+}
+
+.end p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.end a{
+    background-color: #1d1e3d;
+    padding: 10px;
+    width: 100px;
+    margin: 0;
+    text-decoration: none;
+    color: #f9f9f9;
+    
+}
+
+@media screen and (min-width: 480px) {
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul li a{
+        margin: 0;
+    }
+}

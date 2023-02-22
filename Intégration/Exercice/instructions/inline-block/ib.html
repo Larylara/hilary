@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="ib.css"/>
+    <title>inline-block</title>
+</head>
+<body>
+    <header>
+        <h1>Colonnes avec display inline-block</h1>
+        <p>Faire des colonnes avec la propriété display inline-block</p>
+    </header>
+    <main>
+            <h2>Parent sans hack</h2>
+            <section class="parent">
+                <article class="card mil"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque.</article>
+                <article class="card mil"><p>Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Est, suscipit!</article>
+            </section>
+            <h2>Avec article collés</h2>
+            <section class="parent">
+                <article class="card"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque.</article>                <article class="card"><p>Eligendi, voluptates,culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ratione incidunt eos eveniet cupiditate possimus accusantium quod amet inventore officia!</article>
+            </section>
+            <h2>Avec commentaire entre les articles</h2>
+            <section class="parent">
+                <article class="card"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque.</article>
+                <article class="card"><p>Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ratione incidunt eos eveniet cupiditate possimus accusantium quod amet inventore officia!</article>
+            </section>
+            <h2>Méthode CSS pure</h2>
+            <section class="parent">
+                <article class="card"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque.</article>
+                <article class="card"><p>Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ratione incidunt eos eveniet cupiditate possimus accusantium quod amet inventore officia!</article>
+            </section>
+            <h2>Méthode CSS pure + vertical-align: top</h2>
+            <section class="parent">
+                <article class="card"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque.</article>
+                <article class="card"><p>Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ratione incidunt eos eveniet cupiditate possimus accusantium quod amet inventore officia!</article>
+            </section>
+        </main>
+    <footer>
+        <img style="margin: 10px;" src="../background/img/logo-3wa.png" alt="logo-3wa" />
+        <p>Ce matériel pédagogique est la propriété de la <span>3W Academy</span>. Cet exercice a été réalisé par Stephane Pereck.</p>
+    </footer>
+</body>
+</html>

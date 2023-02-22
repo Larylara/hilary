@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<hmtl lang="fr">
+    <head>
+        <title>Formulaire</title>
+    <link rel="stylesheet" href="form_style.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>Un formulaire simple</h1>
+                <p style="padding: 10px;">Faire un premier formulaire simple</p>
+        </header>
+        <main>
+            <form>
+                <fieldset >
+                    <legend>Mes coordonnées</legend>
+                     <br/>
+                        <label style="width: 30%; display: inline-block" for="prénom">Prénom</label>
+                        <input style="width: 50%; display: inline-block" type="text" name="prénom" id="prénom"/>                    
+                    <hr/>                                       
+                    
+                        <label style="width: 30%; display: inline-block" for="nom"> Nom</label>
+                        <input style="width: 50%; display: inline-block" type="text" type="text" name="nom" id="nom" />                    
+                    <hr/>                                     
+                        <label style="width: 30%; display: inline-block" for="email">Email</label>
+                        <input style="width: 50%; display: inline-block" type="text" name="email" id="email"/>
+                    
+                </fieldset>
+                    <br/>
+                    <br/>
+                <fieldset>
+                    <legend>Ma demande</legend>
+                        <br/>
+                    <select name="choix" id="choix">
+                        <option value="0">Choisir l'objet de ma demande...</option>
+                        <option value="0">demande 2</option>
+                        <option value="0">demande 3</option>
+                        <option value="0">demande 4</option>                        
+                    </select><br/>
+                    <textarea name="commentaires" id="commentaires" cols="30" rows="10"></textarea>  
+                </fieldset>
+                <br/>
+                <fieldset style="text-align: center;">
+                    <button type="submit">Valider le formulaire</button>
+                </fieldset>
+           </form>
+        </main>
+        <br/>
+        <footer>
+            <img style="padding: 10px;" src="../form_index.html/img/logo-3wa.png" alt="logo-3wa"/>
+            <p style="padding: 10px;">Ce matériel pédagogique est la propriété de <span>la 3W Academy</span>. Cet exercice a été réalisé par Stephane Pereck.</p>
+        </footer>
+    </body>
+</hmtl>

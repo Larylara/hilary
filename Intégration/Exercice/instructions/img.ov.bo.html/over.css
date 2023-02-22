@@ -1,0 +1,58 @@
+header{
+    background-color: rgb(82, 79, 79);
+    text-align: center;
+}
+h1{
+    color: orangered;
+}
+header p{
+    color: rgb(225, 225, 225);
+}
+span{
+    color: orangered;
+}
+footer{
+    text-align: center;
+    background-color: rgb(82, 79, 79);
+    padding-bottom: 10px;
+}
+body{
+    width: 960px;
+    margin: 0 auto;
+}
+main{
+    background-color: gainsboro;
+    text-align: center;
+}
+h2{
+    margin: 0px;
+}
+article p{
+    padding: 30px;
+    margin-left: 180px;
+    width: 50%;
+    height: 60px;
+    border: 1px solid gainsboro;
+    text-align: center;
+    background-color: white;  
+}
+article{
+    margin: 50px;
+}
+.hidden{
+    overflow: hidden;
+}
+.scroll{
+    overflow: scroll;
+}
+.auto{
+    overflow: auto;
+}
+.first{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 240px;
+    font-size: 16px;
+    height: 0px;
+    white-space: nowrap;
+}

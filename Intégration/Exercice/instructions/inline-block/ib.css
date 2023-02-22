@@ -1,0 +1,44 @@
+body{
+    width: 900px;
+    margin: 0 auto;
+}
+header{
+    background-color: rgb(80, 70, 70);
+    color: rgb(190, 184, 184);
+    padding: 10px;
+    /* margin: 20px; */
+    text-align: center;
+}
+h1{
+    color: orangered;
+    margin: 5px;
+}
+footer{
+    background-color: rgb(80, 70, 70);
+    color: rgb(190, 184, 184);
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+span{
+    color: orangered;
+}
+.parent>article{
+    /* border: 1px solid gainsboro; */
+    display: inline-block;
+}
+.card{
+
+}
+main{
+    margin: 0 auto;
+    
+}
+.mil{
+    /* width: 50%; */
+    border-bottom: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+}
+.parent{
+    border: 1px dotted orangered;
+}   

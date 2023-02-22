@@ -1,0 +1,51 @@
+:root {
+    /* color */
+    --clr-primary: orangered;
+    --clr-secondary: white;
+    --clr-tertiary: rgb(225, 221, 221);
+    --clr-bg: rgb(60, 55, 55);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--clr-tertiary);
+}
+
+header,
+footer {
+    background-color: var(--clr-bg);
+    color: var(--clr-secondary);
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+h1,
+span {
+    color: var(--clr-primary);
+}
+
+.only {
+    background-color: var(--clr-secondary);
+    padding: 2rem;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.only img {
+    transform: rotate(90deg);
+    transition: 3s;
+}
+
+img:hover {
+    transform: rotate(0deg);
+}

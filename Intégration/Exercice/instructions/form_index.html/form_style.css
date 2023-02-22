@@ -1,0 +1,40 @@
+header{
+    background-color: #444141;
+    text-align: center;    
+}
+span{
+    color: rgb(201, 84, 42);
+}
+hr{
+    color: gainsboro;
+    height: 0px;
+}
+h1{
+    color: rgb(201, 84, 42);
+}
+fieldset{
+    border-radius: 0.5em;
+}
+button{
+    background-color: #DD5735;
+    color: #fff;
+    padding: 1em;
+    padding: 1em;
+}
+footer{ 
+    text-align: center;
+    background-color: #444141;
+    border-radius: 0.5em;
+}
+main{
+    width: 960px;
+    margin: 0 auto;
+}
+p{
+    color: gainsboro;
+}
+textarea{
+    width: 100%; 
+    display: inline-block;
+    margin-top: 15px;
+}

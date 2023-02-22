@@ -1,0 +1,165 @@
+/* ----------------------------
+MAIN
+----------------------------- */
+main {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+main article {
+    text-align: center;
+    margin-top: .1rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+.bgc_m {
+    background-color: var(--clr-bg);
+}
+main article > * {
+    margin: 1rem;
+    padding: .5rem;
+}
+main article:first-child button{
+    padding: .5rem 1rem;
+    margin-inline: .5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: .5s;
+    border: none;
+}
+main p {
+    font-family: Athiti,sans-serif;
+    font-weight: bold;
+}
+
+figure {
+    margin: 0;
+}
+.button_item:hover {
+    color: #fff;
+    background-color: var(--clr-svg);
+    cursor: pointer;
+}
+.button_item:focus {
+    color: #fff;
+    background-color: var(--clr-svg);
+}
+.galery {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 2rem 1rem; 
+    background-color: var(--clr-bg);
+    padding: 2rem .1rem;
+}
+.galery figure:last-child {
+    width: 45%;
+    justify-self: center;
+    grid-column: 1/ 3;
+}
+.width {
+    width: 15px;
+    color: var(--clr-svg);
+}
+figure {
+    position: relative;
+    transition: transform 1s;
+    transform: scale(1);
+    margin: 0rem .6rem;
+    box-shadow: 1px 1px 9px;
+}
+figure:hover {
+    transform: scale(1.1);
+}
+figure img {
+    display: block;
+}
+figure figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    color: #fff; 
+    background-color: #462a2a81;
+}
+figure figcaption p {
+    padding: 1rem 2rem;
+    border: #fff 7px solid;
+}
+figure:hover figcaption{
+    visibility: visible;
+}
+.taille {
+    width: 30%;
+    height: 2rem;
+}
+
+/* ----------------------
+TABLETTE
+----------------------- */
+@media screen and (min-width: 780px) {
+    .galery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .galery figure {
+        position: static;
+    }
+    figure figcaption {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        visibility: hidden;
+        color: #fff; 
+        background-color: #462a2a81;
+    }
+    figure figcaption p {
+        max-width: 100%;
+        padding: 1rem 2rem;
+        border: #fff 10px solid;
+    }
+    .galery figure:last-child {
+        justify-self: center;
+        grid-column: auto;
+        width: auto;
+    }
+
+}
+/* -------------------------
+DESKTOP
+----------------------------- */
+
+@media screen and (min-width: 980px) {
+    figure figcaption p {
+        max-width: 100%;
+        padding: 1rem 3rem;
+        border: #fff 10px solid;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

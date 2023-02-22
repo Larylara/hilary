@@ -1,0 +1,31 @@
+header{
+    background-color: rgb(141, 133, 133);
+    border: 1px solid orangered; 
+    text-align: center;
+}
+h1{
+    color: orangered
+}
+main{
+    margin-left:150px;
+    margin-right:150px;
+    width: 960px;
+}
+footer{
+    background-color: rgb(141, 133, 133);
+    border: 1px solid black;
+    text-align: center;
+}
+span{
+    color: orangered
+}
+.float-right{
+    float: right;
+    clear: left;
+    margin: 20px
+}
+.float-left{
+    float: left;
+    clear: right;
+    margin: 20px
+}

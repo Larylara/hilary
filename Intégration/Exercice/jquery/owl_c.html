@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="owl_c.css">
+    <link rel="stylesheet" href="../jquery/fichiers/owl.carousel.min.css">
+    <link rel="stylesheet" href="../jquery/fichiers/owl.theme.default.css">
+    <title>Owl_Carousel</title>
+</head>
+<body>
+    <div class="owl-carousel owl-theme">
+        <img src="../jquery/img/hollywood1.jpg" alt="Hollywood">
+        <img src="../jquery/img/hollywood2.jpg" alt="Hollywood">
+        <img src="../jquery/img/hollywood3.jpg" alt="Hollywood">
+        <img src="../jquery/img/hollywood4.jpg" alt="Hollywood">
+        <img src="../jquery/img/hollywood5.jpg" alt="Hollywood">
+        <img src="../jquery/img/hollywood6.jpg" alt="Hollywood">
+        <img src="../jquery/img/hollywood7.jpg" alt="Hollywood">
+    </div>
+
+
+    <script src="../jquery/fichiers/jQuery3.6.min.js"></script>
+    <script src="../jquery/fichiers/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                nav: true,
+            });
+        });
+    </script>
+</body>
+</html>

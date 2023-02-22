@@ -1,0 +1,122 @@
+/* **********************
+Mobile first
+********************** */
+:root {
+    /* color */
+    --clr-primary: ;
+    --clr-svg: #950000;
+    --clr-bg: #ebe3db;
+    --clr-as: white;
+    --clr-bg_hf: rgb(69, 69, 69);
+    --clr-navh:  #4c4343;
+    --clr-bs: black;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* *********************
+Main
+********************* */
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+section {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.left {
+    text-align: left;
+    margin: 0 1rem;
+}
+
+video {
+    max-width: 100%;
+    padding: 1rem 3rem;
+}
+
+figure img {
+    width: 600px;
+}
+
+article p {
+    font-weight: 701;
+}
+
+.guest p {
+    margin-top: 0;
+}
+
+figcaption {
+    font-weight: 701;
+    margin-top: 2rem;
+}
+
+.guest figure {
+    margin: 0;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+.zoom {
+    transform: scale(1);
+    transition: .5s;
+}
+
+.guest img {
+    max-width: 100%;
+    height: auto;
+}
+
+.guest {
+    background-color: var(--clr-bg);
+    padding: 1rem 3rem;
+    margin: 2rem 4rem;
+}
+
+/* *******************
+ Tablette
+******************** */
+@media screen and (min-width: 780px) {
+    .guest {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        border: 1px solid var(--clr-bg);
+    }
+
+    .guest img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* *******************
+Desktop
+******************** */
+@media screen and (min-width: 980px) {
+    .guest {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        border: 1px solid var(--clr-bg);
+    }
+
+    .guest img {
+        width: 100%;
+        height: auto;
+    }
+}

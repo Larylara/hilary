@@ -1,0 +1,45 @@
+body{
+    width: 900px;
+    margin: 0 auto;
+}
+header{
+    background-color: rgb(108, 99, 99);
+    text-align: center;
+    padding: 5px;
+    color: gainsboro;
+}
+h1{
+    color: orangered;
+}
+footer{
+    background-color: rgb(108, 99, 99);
+    text-align: center;
+    color: gainsboro;
+    padding: 5px;
+}
+.column1{
+    columns: auto 3;
+    column-rule:1px solid black ;
+    column-gap: 15px;
+}
+main{
+    padding-top: 25px;
+    background-color: rgb(237, 237, 237);
+}
+.card li{
+    background-color: gainsboro;
+    width: 70%;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+
+}
+.card{
+    columns: auto 2; 
+}
+article{
+    margin-top: 30px;
+}
+li{
+    list-style: none;
+}

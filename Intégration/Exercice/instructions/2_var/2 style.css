@@ -1,0 +1,39 @@
+header{
+    background-color: rgb(182, 175, 175);
+    border: 1px solid rgb(240, 99, 48)
+}
+h1{
+    color: rgb(240, 99, 48);
+}
+@font-face{
+    font-family: "toto";
+    src: url("muli/Muli-BoldItalic.ttf");
+}
+h1{
+    font-family: "toto";
+    src: url("muli/Muli-BoldItalic.ttf");
+}
+@font-face {
+    font-family: "toto";
+    src: url("muli/Muli-Regular.ttf");
+}
+p{
+    font-family: "toto";
+    src: url("muli/Muli-Regular.ttf");
+}
+@font-face {
+    font-family: "toto";
+    src: url("muli/Muli-Bold.ttf");
+}
+h2{
+    font-family: "toto";
+    src: url("muli/Muli-Bold.ttf");
+}
+h3{
+    font-family: "toto";
+    src: url("muli/Muli-Bold.ttf");
+}
+footer{
+    background-color: rgb(182, 175, 175);
+    border: 1px solid black;
+}

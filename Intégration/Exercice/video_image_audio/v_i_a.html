@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="v_i_a.css">
+    <title>Video Audio Image</title>
+</head>
+<body>
+    <header>
+        <h1>Intégrer des médias en HTML</h1>
+        <p>Utilisations de services tiers et des éléments AUDIO, VIDEO pour int"grer des sons et ds videos</p>
+    </header>
+    <main class="container">
+        <section>
+            <h2>La dernière conférence de Lea Verou (sur Vimeo)</h2>
+            <article>
+                <iframe src="https://www.w3schools.com" height="400" width="600"></iframe>
+                <p><span>Lea Verou - The Web Design Cheat Code: Using SVG to Bridge CSS' Gaps</span> from <span>Fronteers</span> on <span>Vimeo</span></p>
+            </article>
+        </section>
+        <section>
+            <h2>La balise video</h2>
+            <article>
+                <video controls poster="../video_image_audio/fichiers/bunny.jpg" >
+                    <source src="../video_image_audio/fichiers/bunny.mp4"/>
+                    <source src="../video_image_audio/fichiers/bunny.ogv"/>
+                </video>
+            </article>
+        </section>
+        <section>
+            <h2>La balise &lt; audio &gt;</h2>
+            <article>
+                <audio controls>
+                    <source src="../video_image_audio/fichiers/space.mp3" type="audio/mp3"/>
+                    <source src="../video_image_audio/fichiers/space.mp3" type="audio/ogg"/>
+                    <source src="../video_image_audio/fichiers/space.mp3" type="audio/wav"/>
+                </audio>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <img src="../instructions/img/logo-3wa copy.png" alt="3wa">
+        <p>Ce matériel pédagogique est la propriété de la <span>3W Academy</span>.Cet exercice a été réalisé par <span>Catherine Denos</span>.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+/* **************************
+Variables
+************************* */
+$clr-primary: pink;
+$clr-secondary: white;
+$clr-tertiary: rgb(143, 100, 100);
+$clr-bh: black;
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: $clr-tertiary;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding: 1rem;
+        a {
+            text-decoration: none;
+            color: $clr-secondary;
+            padding: 1rem;
+            &:focus {
+                background-color: $clr-primary;
+            }
+            &:hover {
+                background-color: $clr-bh;
+            }
+        }
+    }
+}
+
+@mixin parag {
+    background-color: $clr-primary;
+    margin: 2rem;
+}
+
+.class1 {
+    @include parag;
+    color: purple;
+}
+
+.class2 {
+    @include parag;
+    color: teal;
+}
+

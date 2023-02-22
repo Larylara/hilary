@@ -1,0 +1,57 @@
+header{
+    background-color: rgb(63, 62, 62);   
+    text-align: center;
+    color: azure;
+    padding: 20px;
+}
+
+h1{
+    color: orangered;
+}
+
+span{
+    color: orangered;
+}
+
+footer{
+    background-color: rgb(63, 62, 62);   
+    text-align: center;
+    color:white;
+    padding: 20px;
+}
+
+main{
+    margin: 0 auto;
+    background-image: url("../instructions/form_index.html/img/phare.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+}
+
+article p{
+    margin: 0;
+ 
+}
+
+section{
+    text-align: center;
+    display: flex;
+    gap: 2rem;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+article{
+    text-align: justify;
+    flex-basis: 45%;
+}
+
+article img{
+    max-width: 100%;
+    height: auto;
+}
+
+

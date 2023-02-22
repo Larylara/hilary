@@ -1,0 +1,16 @@
+header{
+    background-color: rgb(231, 233, 236);
+    border: 1px solid black;
+    text-align: center;
+}
+h1{
+    color: orangered;
+}
+footer{
+   background-color: rgb(231, 233, 236);
+   border: 1px solid black;
+   text-align: center;
+}
+span{
+    color: orangered;
+}

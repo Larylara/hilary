@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Courgette";
+    src: url(../instructions/ressources/Courgette-Regular.ttf);
+    font-size: 18px; 
+}
+header{
+    text-align: center;
+    font-family: "Courgette";
+    src: url(../instructions/ressources/Courgette-Regular.ttf);
+    font-size: 18px;
+}   
+nav{
+    text-align: left;
+    color: #003884;   
+}
+a{
+    text-decoration: none;
+    color: #003884;  
+}
+h1{
+    color: #003884;
+    font-style: italic;
+}
+
+
+div{
+    background-color: #c4d4eb;
+    text-align: center;
+    color: #003884;
+    font-family: "Courgette";
+    src: url(../instructions/ressources/Courgette-Regular.ttf);
+    font-size: 25px; 
+}
+span{
+    color: #4f89b9;
+}
+.flag-ny{
+    float: right;
+    height: 120px;
+}
+.statue-of-liberty{
+    float: left;
+    height: 120px;
+}
+.brooklyn-bridge{
+    float: right;
+    height: 190px;
+}
+.taxi-cab{
+    float: left;
+    height: 120px;
+}
+h2{
+    color:#4f89b9;
+    text-align: center;
+}
+body{
+    width: 980px;
+    margin: 0 auto;
+}
+section{
+    font-style: 25px normal;
+}
+footer{
+    text-align: center;
+}
+.menu{
+    text-decoration: black underline;
+    color: black;
+}
+h3{
+    color: #003884;
+    text-align: center; 
+}

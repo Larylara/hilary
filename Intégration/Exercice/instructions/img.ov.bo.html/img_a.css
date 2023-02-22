@@ -1,0 +1,66 @@
+header{
+    background-color: rgb(63, 62, 62);   
+    text-align: center;
+    color: azure;
+    padding: 20px;
+}
+
+h1{
+    color: orangered;
+}
+
+span{
+    color: orangered;
+}
+
+footer{
+    background-color: rgb(63, 62, 62);   
+    text-align: center;
+    color:white;
+    padding: 20px;
+}
+
+main{
+    margin: 0 auto;
+    width: 80%;
+}
+
+section{
+    background-color: white;
+    padding: 20px 0; 
+    margin: 20px;
+}
+
+article{
+    padding: 20px;
+}
+
+h2{
+    text-align: left;
+}
+
+body{
+    background-color: rgb(203, 202, 202);
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.nemo{
+    padding: 0;
+    display: block;
+}
+
+/* telephone */
+@media screen and (min-width: 768px) {
+    
+}
+@media screen and (min-width: 960px) {
+    
+}
+@media screen and (min-width: 1024px) {
+    
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="plug.css">
+    <link rel="stylesheet" href="../jquery/fichiers/jquery.fancybox.min.css">
+    <title>Plugin jQuery</title>
+</head>
+<body>
+    <header>
+        <h1>Plugin jQuery</h1>
+        <p>Galerie d'images avec le plugin jQuery Fancy Box</p>  
+    </header>
+    <main>
+    <section>
+        <h2>Fancy Box</h2>
+            <article class="only">
+                <a data-fancybox="images" data-caption="Abastract #1" href="../jquery/img/abstract1-grand.jpg">
+                    <img src="../jquery/img/abstract1-vignette.jpg" alt="vignette">
+                </a>
+                <a data-fancybox="images" data-caption="Abastract #" href="../jquery/img/abstract2-grand.jpg">
+                    <img src="../jquery/img/abstract2-vignette.jpg" alt="vignette">
+                </a>
+                <a data-fancybox="images" data-caption="Nature #1" href="../jquery/img/nature1-grand.jpg">
+                    <img src="../jquery/img/nature1-vignette.jpg" alt="vignette">
+                </a>
+                <a data-fancybox="images" data-caption="Nature #2" href="../jquery/img/nature2-grand.jpg">
+                    <img src="../jquery/img/nature2-vignette.jpg" alt="vignette">
+                </a>
+                <a data-fancybox="images" data-caption="Nature #3" href="../jquery/img/nature3-grand.jpg">
+                    <img src="../jquery/img/nature3-vignette.jpg" alt="vignette">
+                </a>
+                <a data-fancybox="images" data-caption="tech #1" href="../jquery/img/tech1-grand.jpg">
+                    <img src="../jquery/img/tech1-vignette.jpg" alt="vignette">
+                </a>
+                <a data-fancybox="images" data-caption="tech #2" href="../jquery/img/tech2-grand.jpg">
+                    <img src="../jquery/img/tech2-vignette.jpg" alt="vignette">
+                </a>
+                <a data-fancybox="images" data-caption="tech #3" href="../jquery/img/tech3-grand.jpg">
+                    <img src="../jquery/img/tech3-vignette.jpg" alt="vignette">
+                </a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <img src="../instructions/img/logo-3wa copy.png" alt="3wa">
+        <p>Ce matériel pédagogique est la propriété de la <span>3W Academy</span>.Cet exercice a été réalisé par <span>Catherine Denos</span>.</p>
+    </footer>
+    <script src="../jquery/fichiers/jQuery3.6.min.js"></script>
+    <script src="../jquery/fichiers/jquery.fancybox.min.js"></script>
+    <script>
+        $("document").ready( function () {
+            $("[data-fancybox='images']").fancybox({
+
+            });
+        });
+    </script>
+
+</body>
+</html>

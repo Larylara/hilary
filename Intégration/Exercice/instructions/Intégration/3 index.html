@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style></style>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header style="text-align:center;">
+            <h1 style="color: orangered; margin: 0px; padding:0px;">Les tables</h1>         
+            <br/><p style="color: rgb(141, 133, 133);">Faire des tables simples et complexes</p>
+            <br/>
+        </header>
+        <main> 
+        <h1>Une table simple</h1>
+
+            <table>
+                <tr>
+                    <th>Entête 1</th>
+                    <th>Entête 2</th>
+                    <th>Entête 3</th>
+                    <th>Entête 4</th>
+                </tr>
+                <tr>
+                    <td>Case 1</td>
+                    <td>Case 2</td>
+                    <td>Case 3</td>
+                    <td>Case 4</td>
+                </tr>
+                <tr>
+                    <td>Case 5</td>
+                    <td>Case 6</td>
+                    <td>Case 7</td>
+                    <td>Case 8</td>
+                </tr>
+            </table>      
+        <h2>La même table avec des cases fusionnées</h2>
+            <table>
+                <tr>
+                    <th>Entête 1</th>
+                    <th>Entête 2</th>
+                    <th>Entête 3</th>
+                    <th>Entête 4</th>
+                </tr>
+                <tr>
+                    <td>Case 1</td>
+                    <td colspan="2">Case 2</td>
+                    <td rowspan="2">Case 4</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Case 5</td>
+                    <td>Case 7</td>
+                </tr>
+            </table>
+        <h3>Une table plus complexe</h3>
+            <table style="border-collapse: collapse;">
+                    <caption>Régions francaises</caption>
+                    <thead>   
+                        <tr style="font-weight: bold;">
+                            <th>Nom</th>
+                            <th>Code ISO</th>
+                            <th>Code INSEE</th>
+                            <th>Superficie (km2)</th>
+                            <th>Population 2020</th>
+                            <th>Nombre de communes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background-color: #ddd;">
+                            <td>Auvergne-Rhône-Alpes</td>
+                            <td>FR-ARA</td>
+                            <td style="text-align: right;">84</td>
+                            <td style="text-align: right">69 711</td>
+                            <td style="text-align: right">8 032 377</td>
+                            <td style="text-align: right">4 030</td>
+                        </tr>
+                        <tr><td>Bourgogne-Franche-Comté</td>
+                            <td>FR-BFC</td>
+                            <td style="text-align: right">27</td>
+                            <td style="text-align: right">47 784</td>
+                            <td style="text-align: right">2 783 039</td>
+                            <td style="text-align: right">3 702</td>
+                        </tr>
+                        <tr style="background-color: #ddd;">
+                            <td>Bretagne</td>
+                            <td>FR-BRE</td>
+                            <td style="text-align: right">53</td>
+                            <td style="text-align: right">27 208</td>
+                            <td style="text-align: right">3 340 379</td>
+                            <td style="text-align: right">1 208</td>
+                        </tr>
+                        <tr><td>Centre-Val de Loire</td>
+                            <td>FR-CVL</td>
+                            <td style="text-align: right">24</td>
+                            <td style="text-align: right">39 151</td>
+                            <td style="text-align: right">2 559 073</td>
+                            <td style="text-align: right">1 757</td>
+                        </tr>
+                        <tr style="background-color: #ddd;">
+                            <td>Corse</td>
+                            <td>FR-COR</td>
+                            <td style="text-align: right">94</td>
+                            <td style="text-align: right">8 680</td>
+                            <td style="text-align: right">344 679</td>
+                            <td style="text-align: right">360</td>
+                        </tr>
+                        <tr><td>Grand Est</td>
+                            <td>FR-GES</td>
+                            <td style="text-align: right">44</td>
+                            <td style="text-align: right">57 441</td>
+                            <td style="text-align: right">5 511 747</td>
+                            <td style="text-align: right">5 121</td>
+                        </tr>
+                        <tr style="background-color: #ddd;">
+                            <td>Hauts-de-France</td>
+                            <td>FR-HDF</td>
+                            <td style="text-align: right">32</td>
+                            <td style="text-align: right">31 806</td>
+                            <td style="text-align: right">5 962 662</td>
+                            <td style="text-align: right">3 789</td>
+                        </tr>
+                        <tr><td>Île-de-France</td>
+                            <td>FR-IDF</td>
+                            <td style="text-align: right">11</td>
+                            <td style="text-align: right">12 011</td>
+                            <td style="text-align: right">12 278 210</td>
+                            <td style="text-align: right">1 268</td>
+                        </tr>
+                        <tr style="background-color: #ddd;">
+                            <td>Normandie</td>
+                            <td>FR-NOR</td>
+                            <td style="text-align: right">28</td>
+                            <td style="text-align: right">29 907</td>
+                            <td style="text-align: right">3 303 500</td>
+                            <td style="text-align: right">2 652</td>
+                        </tr>
+                        <tr><td>Nouvelle-Aquitaine</td>
+                            <td>FR-NAQ</td>
+                            <td style="text-align: right">75</td>
+                            <td style="text-align: right">84 036</td>
+                            <td style="text-align: right">5 999 982</td>
+                            <td style="text-align: right">4 314</td>
+                        </tr>
+                        <tr style="background-color: #ddd;">
+                            <td>Occitanie</td>
+                            <td>FR-OCC</td>
+                            <td style="text-align: right">76</td>
+                            <td style="text-align: right">72 724</td>
+                            <td style="text-align: right">5 924 858</td>
+                            <td style="text-align: right">4 454</td>
+                        </tr>
+                        <tr><td>Pays de la Loire</td>
+                            <td>FR-PDL</td>
+                            <td style="text-align: right">52</td>
+                            <td style="text-align: right">32 082</td>
+                            <td style="text-align: right">3 801 797</td>
+                            <td style="text-align: right">1 238</td>
+                        </tr>
+                        <tr style="background-color: #ddd;">
+                            <td>Provence-Alpes-Côte d'Azur</td>
+                            <td>FR-PAC</td>
+                            <td style="text-align: right">93</td>
+                            <td style="text-align: right">31 400</td>
+                            <td style="text-align: right">5 055 651</td>
+                            <td style="text-align: right">946</td>                
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                <tr>
+                    <td colspan="3" style="text-align: right">Total</td>
+                    <td style="text-align: right">543 941</td>
+                    <td style="text-align: right">64 897 954</td>
+                    <td style="text-align: right">64 839</td>
+                </tr>
+                    </tfoot>
+                </table>
+        </main>
+        <br/>
+        <footer style="text-align: center">
+            <br/>
+            <img src="logo-3wa.png" alt="logo-3wa"/>
+            <p></p>
+            <span style="color: white;">Ce matériel pédagogique est la propritété de la <span style="color: orangered;">3W Academy</span>.Cet exercice a été par Stéphane Pereck.</span>
+            <br/>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Project</title>
+    <!-- Librairie React -->
+    <script src="assets/JS/react.development.js"></script>
+    <script src="assets/JS/react-dom.development.js"></script>
+    <!-- Librairie Babel -->
+    <script src="assets/JS/babel.min.js"></script>
+    <style>
+        .heading {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+                        /******* Exo 1 *******/
+
+        // class App extends React.Component {
+        //     constructor(props) {
+        //         super(props)
+        //         this.state = {
+        //             messages: [
+        //                 {message: "Un peu d'Amsterdam dans la bouche"},
+        //                 {message: "Da Da Da Da Da"},
+        //                 {message: "Une bouffée d'oxygène dans la kush"},
+        //                 {message: "Da Da Da Da Da"},
+        //                 {message: "Dans le vide tu respires à peine"},
+        //                 {message: "Le succès m'a donné des ailes..."}
+        //             ]
+        //         }
+        //     }
+        //     render() {
+        //         return (
+        //             <div>
+        //                 <Messages msg={this.state.messages} />
+        //             </div>
+        //         )
+        //     }
+        // }
+
+        // class Messages extends React.Component {
+        //     render() {
+        //         return(
+        //             this.props.msg.map((el, i) => {
+        //                 return <Message key={i} showMsg = {el.message} />
+        //             })
+        //         )
+        //     }
+        // }
+
+        // class Message extends React.Component {
+        //     render() {
+        //         return (
+        //             <p>{this.props.showMsg}</p>
+        //         )
+        //     }
+        // }
+        // ReactDOM.render(
+            // <App />, 
+            // document.getElementById('root')
+            // );
+
+
+            /******* Exo 2: Clock *******/
+        // class Clock extends React.Component {
+        //     constructor(props) {
+        //         super(props)
+        //         this.state = {
+        //             date: new Date()
+        //         }
+        //     }
+        //     componentDidMount() {
+        //         this.timeId = setInterval(() => this.time(), 1000);
+        //     }
+        //     componentDidUnmount() {
+        //         clearInterval(this.timeId);
+        //     }
+        //     time() {
+        //         this.setState({
+        //             date: new Date()
+        //         }) 
+        //     }
+        //     render() {                
+        //         return <p>{this.state.date.getHours()}h : {this.state.date.getMinutes()}m : {this.state.date.getSeconds()}</p> 
+        //     }
+        // }
+        // ReactDOM.render(d
+        //     <Clock />,
+        //     document.getElementById('root')
+        // )
+
+                            /******* Exo 2: Clock *******/
+
+        // class Clock extends React.Component {
+        //     constructor(props) {
+        //         super(props),
+        //         this.state = {
+        //             seconds: 0,
+        //             minutes: 0,
+        //             hours: 0
+        //         }
+        //     }
+        //     showClock() {
+        //         this.setState({
+        //             seconds: this.state.seconds+1
+        //         })
+        //         if(this.state.seconds === 60) {
+        //             this.setState({
+        //                 seconds: 0,
+        //                 minutes: this.state.minutes+1
+        //             })
+        //         }
+        //         if(this.state.minutes === 60) {
+        //             this.setState({
+        //                 minutes: 0,
+        //                 hours: this.state.hours+1
+        //             })
+        //         }
+        //         if(this.state.hours === 24) {
+        //             this.setState({
+        //                 seconds: 0,
+        //                 minutes: 0,
+        //                 // minutes: this.state.minutes+1
+        //             })
+        //         }
+        //     }
+        //     render() {
+        //         return (
+        //             <p>{this.state.hours}h : {this.state.minutes}m : {this.state.seconds}s</p>
+        //         )
+        //     }
+        // }
+        // ReactDOM.render(
+        //     <Clock />, 
+        //     document.getElementById("root")
+        // )
+        
+                            /*********** Exo3: Etoiles **********/
+
+    // class Star extends React.Component {
+    //     constructor(props) {
+    //         super(props),
+    //         this.state = {
+    //             countStart: 0,
+    //             countHeight:0,
+    //             id:null
+    //         }
+    //     }
+
+    //     componentDidMount() {
+    //         this.state.id = setInterval(() =>this.createStart(),200) 
+    //     }
+
+    //     createStart() {
+    //         this.setState({
+    //             countStart: this.state.countStart+1
+    //         })
+    //     }
+
+    //     componentDidUpdate(propsStates, prevStates) {
+    //         if(this.state.countStart != prevStates) {
+    //             document.getElementById('container').innerHTML += "<span>*</span>"
+    //         }
+
+    //         if(this.state.countStart === 20) {
+    //             document.getElementById('container').innerHTML += "<br>"w
+    //             this.setState({
+    //                 countStart: 0,  
+    //                 countHeight: this.state.countHeight+1
+    //             })
+    //         }
+            
+    //         if(this.state.countHeight === 9) {
+    //             clearInterval(this.state.id)
+    //         }
+
+    //     }
+
+    //     render() {
+    //         return (
+    //             <div id="container"></div>
+    //         )
+    //     }
+    // }
+
+    // ReactDOM.render(
+    //     <Star />,
+    //     document.getElementById('root')
+    // )
+    
+                        /********* Exo4: Demande en mariage *********/            
+    // class Asking extends React.Component {
+    //     constructor(props) {
+    //         super(props),
+    //         this.state = {
+    //             myBool: true
+    //         }
+    //     }
+
+    //     delAsking = () => {
+    //         this.setState({
+    //             myBool: false
+    //         });
+    //     }
+    //     showAsking = () => {
+    //         this.setState({
+    //             myBool: true
+    //         });
+    //     }
+    //     render() {
+    //         let ask;
+    //         if(this.state.myBool) {
+    //             ask = <Test />;
+    //         };     
+    //         return (
+    //             <div>
+    //                 {ask},
+    //                 <button type="button" onClick={this.delAsking}>Delete asking</button>
+    //                 <button type="button" onClick={this.showAsking}>Show asking</button>
+    //             </div>
+    //         )
+    //     }
+    // }
+    // class Test extends React.Component {
+    //     componentWillUnmount() {
+    //         alert("Etes-vous sûr de vouloir refuser cette demande? On en fait pas deux comme celle-ci huummmmm");
+    //     }
+    //     render() {
+    //         return (
+    //             <h1>Veux-tu m'épouser???? T'as interêt à dire oui inh</h1>
+    //         )
+    //     }
+    // }
+    // ReactDOM.render(
+    //     <Asking />,
+    //     document.getElementById('root')
+    // )
+
+                        /********* Exo4: A fucking lambo *********/   
+    class Car extends React.Component {
+        constructor(props) {
+            super(props)
+        }
+
+        render() {
+            return <h2>I have a {this.props.type.color} {this.props.type.mark}</h2>
+        }
+    }
+
+    class Garage extends React.Component {
+        render() {
+            let carInfo = {
+                color: "black",
+                year: 2023, 
+                mark: "lamborghini",
+            };
+            return (
+                <div>
+                    <h2>Woww do u see this car?</h2>    
+                    <Car type={carInfo} />
+                </div>
+            )
+        }
+    }
+    ReactDOM.render(
+        <Garage />, 
+        document.getElementById('root')
+    )
+
+    </script>
+</body>
+</html>
