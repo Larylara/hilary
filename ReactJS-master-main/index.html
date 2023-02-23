@@ -11,9 +11,20 @@
     <!-- Librairie Babel -->
     <script src="assets/JS/babel.min.js"></script>
     <style>
-        .heading {
-            color: purple;
+        /* .container {
+            text-align: center;
         }
+        .show {
+            border: 1px solid rgb(143, 88, 67);
+            border-radius: 2rem;
+        }
+        form label{
+            display: flex;
+            justify-content: space-between;
+        }
+        input {
+            margin: 1rem;
+        } */
     </style>
 </head>
 <body>
@@ -177,7 +188,6 @@
     //                 countHeight: this.state.countHeight+1
     //             })
     //         }
-            
     //         if(this.state.countHeight === 9) {
     //             clearInterval(this.state.id)
     //         }
@@ -190,7 +200,6 @@
     //         )
     //     }
     // }
-
     // ReactDOM.render(
     //     <Star />,
     //     document.getElementById('root')
@@ -204,7 +213,6 @@
     //             myBool: true
     //         }
     //     }
-
     //     delAsking = () => {
     //         this.setState({
     //             myBool: false
@@ -245,36 +253,240 @@
     // )
 
                         /********* Exo4: A fucking lambo *********/   
-    class Car extends React.Component {
-        constructor(props) {
-            super(props)
-        }
+    // class Car extends React.Component {
+    //     constructor(props) {
+    //         super(props)
+    //     }
+    //     render() {
+    //         return <h2>I have a {this.props.type.color} {this.props.type.mark}</h2>
+    //     }
+    // }
 
-        render() {
-            return <h2>I have a {this.props.type.color} {this.props.type.mark}</h2>
-        }
+    // class Garage extends React.Component {
+    //     render() {
+    //         let carInfo = {
+    //             color: "black",
+    //             year: 2023, 
+    //             mark: "lamborghini",
+    //         };
+    //         return (
+    //             <div>
+    //                 <h2>Woww do u see this car?</h2>    
+    //                 <Car type={carInfo} />
+    //             </div>
+    //         )
+    //     }
+    // }
+    // ReactDOM.render(
+    //     <Garage />, 
+    //     document.getElementById('root')
+    // )
+
+                        /********* Exo5: Big_forms *********/
+    // class Form extends React.Component {
+    //     constructor(props) {
+    //         super(props),
+    //         this.state = {
+    //             lnameValue: "",
+    //             fnameValue: "",
+    //             usernameValue: "",
+    //             mailValue: "",
+    //             hobbieValue: "",
+    //             metierValue: "",
+    //             ageValue: ""
+    //         }
+    //         this.handleInputChange = this.handleInputChange.bind(this);
+    //     }
+    //     handleInputChange(event) {
+    //         const target = event.target;
+    //         const value = target.value;
+    //         const name = target.name; 
+            
+    //         this.setState ({
+    //             [name]: value
+    //         });
+            // console.log(value);
+    //     }
+    //     render() {
+    //         return (
+    //             <div className="container">
+    //                 <form>
+    //                     <label>Nom: 
+    //                         <input 
+    //                             name="lnameValue"
+    //                             type="text" 
+    //                             value={this.state.lnameValue} 
+    //                             onChange={this.handleInputChange}/>
+    //                     </label>
+
+    //                     <label>Prénoms: 
+    //                         <input 
+    //                             name="fnameValue"
+    //                             type="text" 
+    //                             value={this.state.fnameValue} 
+    //                             onChange={this.handleInputChange}/>
+    //                     </label>
+
+    //                     <label>Nom d'utilisateur: 
+    //                         <input 
+    //                             name="usernameValue"
+    //                             type="text" 
+    //                             value={this.state.usernameValue} 
+    //                             onChange={this.handleInputChange}/>
+    //                     </label>    
+
+    //                     <label>Hobbie: 
+    //                         <input 
+    //                             name="hobbieValue"
+    //                             type="text" 
+    //                             value={this.state.hobbieValue} 
+    //                             onChange={this.handleInputChange}/>
+    //                     </label>
+
+    //                     <label>Métier: 
+    //                         <input 
+    //                             name="metierValue"
+    //                             type="text" 
+    //                             value={this.state.metierValue} 
+    //                             onChange={this.handleInputChange}/>
+    //                     </label>
+
+    //                     <label>Age: 
+    //                         <input 
+    //                             name="ageValue"
+    //                             type="number" 
+    //                             value={this.state.ageValue} 
+    //                             onChange={this.handleInputChange}/>
+    //                     </label>
+
+    //                     <div onChange={this.handleInputChange}>
+    //                         <input 
+    //                             name="genre"
+    //                             type="radio" 
+    //                             value="masculin" />masculin
+    //                         <input 
+    //                             name="genre"
+    //                             type="radio" 
+    //                             value="féminin" />féminin
+    //                         <input 
+    //                             name="genre"
+    //                             type="radio"   
+    //                             value="autres" />autres
+    //                     </div>
+    //                     <button type="submit">Envoyer</button>
+    //                 </form>
+    //                 <div className="show">
+    //                 <h1>Bienvenue à vous {this.state.fnameValue} {this.state.lnameValue}</h1>
+    //                     <p>Permettez-moi de vous appeler {this.state.usernameValue}, mais vous ne faites pas du tout {this.state.ageValue}, étant donné que vous êtes officiellement membre de notre communauté. Vous avez notifier être fan de {this.state.hobbieValue}. Ca tombe bien 34% de nos membres l'ont aussi recensé. Donc pour rendre facile votre insertion dans notre petite communauté, vous aurez la possibilité d'interagir avec eux et inversement grâce à votre addresse mail {this.state.mailValue}.Vous pourriez même trouver des personnes évoluant dans le même secteur du {this.state.metierValue} que vous </p>
+    //                 </div>
+    //             </div>
+    //         )
+    //     }
+    // }
+    // ReactDOM.render(
+    //     <Form />,
+    //     document.getElementById('root')
+    // )
+
+                        /********* Exo6: Cooking Recipe *********/
+    // class Boiling extends React.Component {
+    //     constructor(props) {
+    //         super(props);
+    //         this.state = {
+    //             temperature: ""
+    //         };
+    //         this.handleChange = this.handleChange.bind(this);
+    //         this.reaction = this.reaction.bind(this);
+    //     }
+
+    //     handleChange(event) {
+    //         this.setState({
+    //             temperature: event.target.value
+    //         })
+    //     }
+        
+    //     reaction() {
+    //         if(this.state.temperature >= 100) {
+    //             alert("L'eau bout. Vous pouvez maintenant y verser....");
+    //         } else {
+    //             alert("L'eau ne bout pas. Attendons donc avant d'y ajouter quoi que ce soit");
+    //         }
+    //     }
+    //         render() {
+    //         return (
+    //             <div>
+    //                 <fieldset>
+    //                     <legend>Veuillez saisir la température</legend>
+    //                     <input type="number" onChange={this.handleChange}/>
+    //                     <input type="submit"  onClick={this.reaction}/>
+    //                 </fieldset>   
+    //             </div>
+    //         )
+    //     }
+    // }
+    // ReactDOM.render(
+    //     <Boiling />,
+    //     document.getElementById('root')
+    // )
+
+                        /********* Exo:  *********/
+    
+    function FancyBorder(props) {
+        return (
+            <div className={'FancyBorder FancyBorder-' + props.color}>
+            {props.children}
+            </div>
+        );
+    }
+    
+    function Dialog(props) {
+        return (
+            <FancyBorder color="blue">
+            <h1 className="Dialog-title">
+                {props.title}
+            </h1>
+            <p className="Dialog-message">
+                {props.message}
+            </p>
+            {props.children}
+            </FancyBorder>
+        );
     }
 
-    class Garage extends React.Component {
+    class SignUpDialog extends React.Component {
+        constructor(props) {
+            super(props);
+            this.handleChange = this.handleChange.bind(this);
+            this.handleSignUp = this.handleSignUp.bind(this);
+            this.state = {login: ''};
+        }
+
         render() {
-            let carInfo = {
-                color: "black",
-                year: 2023, 
-                mark: "lamborghini",
-            };
             return (
-                <div>
-                    <h2>Woww do u see this car?</h2>    
-                    <Car type={carInfo} />
-                </div>
-            )
+            <Dialog title="Programme d'exploration de Mars"
+                    message="Comment devrions-nous nous adresser à vous ?">
+                <input value={this.state.login}
+                    onChange={this.handleChange} />
+                <button onClick={this.handleSignUp}>
+                Inscrivez-moi !
+                </button>
+            </Dialog>
+            );
+        }
+
+        handleChange(e) {
+            this.setState({login: e.target.value});
+        }
+
+        handleSignUp() {
+            alert(`Bienvenue à bord, ${this.state.login} !`);
         }
     }
     ReactDOM.render(
-        <Garage />, 
+        <SignUpDialog />,
         document.getElementById('root')
     )
-
+            
     </script>
 </body>
 </html>
